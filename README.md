@@ -164,7 +164,22 @@ struct EverythingScreen: View {
 
 We can use `Never` as input type.
 ```swift
-import SwiftUI
+struct EverythingDetailState {
+    var article: Article
+}
+
+class EverythingDetailViewModel: ViewModel {
+    
+    @Published
+    var state: EverythingDetailState
+    
+    init(article: Article) {
+        self.state = .init(article: article)
+    }
+    
+    func trigger(_ input: Never) {}
+}
+
 
 struct EverythingDetailScreen: View {
     @ObservedObject var viewModel: AnyViewModel<EverythingDetailState, Never>
