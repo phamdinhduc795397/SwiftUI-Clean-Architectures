@@ -1,5 +1,5 @@
 # SwiftUI-Clean-Architectures
-A SwiftUI project implements Clean Architecture, MVVM & Coordinator pattern.
+A sample SwiftUI app built using the Uncle Bob's Clean Architecture, MVVM & Coordinator pattern. 
 
 # Layers
 - Domain Layer: Entities + Use Cases + Repositories Protocols
